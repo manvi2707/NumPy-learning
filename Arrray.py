@@ -27,3 +27,17 @@ print(array3D[0,0,0]) # usually in python we use chain indexing but it is slower
 
 word = array3D[0,1,2] + array3D[2,0,2] + array3D[0,0,2] + array3D[1,0,1]
 print(word)
+
+# -------> SLICING <--------
+
+arrayy = np.array([[1, 2, 3, 4],
+                  [5, 6, 7, 8,],
+                  [9, 10, 11, 12],
+                  [13, 14, 15, 16]])
+
+# array[start:end:step] ; steps and indexs can be negative like in python
+# row selection
+print(arrayy[0:4:2]) 
+
+# column selection
+print(arrayy[:,0:3:2]) # here : means selecting every row
